@@ -27,3 +27,4 @@ print("Intercept:",round(c,3))
 x_test=8
 y_pred=m*x_test+c
 print("Prediction for x=8:",round(y_pred,3))
+
