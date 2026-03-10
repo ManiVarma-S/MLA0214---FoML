@@ -6,7 +6,7 @@ def load_data(file):
         data=list(csv.reader(f))
     return [float(r[0]) for r in data[1:]]
 
-data=load_data("em_data.csv")
+data=load_data("em_data_10.csv")
 
 mu1=random.choice(data)
 mu2=random.choice(data)
@@ -27,3 +27,4 @@ for iteration in range(10):
 
 print("Cluster 1 Mean:",round(mu1,2))
 print("Cluster 2 Mean:",round(mu2,2))
+
