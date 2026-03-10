@@ -62,7 +62,7 @@ def confusion_matrix(actual, predicted):
 # -------------------------
 # Main
 # -------------------------
-data = load_data("naive_bayes_data.csv")
+data = load_data("naive_bayes_data_6.csv")
 dataset = data[1:]
 
 class_counts, feature_counts, total = train_nb(dataset)
@@ -83,3 +83,4 @@ for row in matrix:
 
 accuracy = sum([1 for a,p in zip(actual,predicted) if a==p]) / len(actual)
 print("\nAccuracy:", round(accuracy*100,2), "%")
+
