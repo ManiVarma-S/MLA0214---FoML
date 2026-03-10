@@ -13,7 +13,7 @@ def distance(a,b):
         d+=(float(a[i])-float(b[i]))**2
     return math.sqrt(d)
 
-data=load_data("iris_data.csv")
+data=load_data("iris_data_12.csv")
 
 test=[5.8,3.0,4.1,1.3]
 k=3
@@ -31,4 +31,5 @@ neighbors=[label for _,label in distances[:k]]
 prediction=Counter(neighbors).most_common(1)[0][0]
 
 print("Test Sample:",test)
+
 print("Predicted Flower:",prediction)
