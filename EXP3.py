@@ -54,7 +54,7 @@ def id3(data, attrs):
     return tree
 
 
-data = load_data(r"C:\Users\WELCOME\Downloads\id3_data.csv")
+data = load_data(r"C:\Users\WELCOME\Downloads\id3_data_3.csv")
 
 attributes = data[0][:-1]
 training_data = data[1:]
@@ -87,3 +87,4 @@ result = classify(tree, new_sample, attributes)
 
 print("\nNew Sample:", new_sample)
 print("Classification:", result)
+
