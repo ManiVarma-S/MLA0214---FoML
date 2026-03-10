@@ -5,7 +5,7 @@ def load_data(file):
         data=list(csv.reader(f))
     return data[1:]
 
-data=load_data("car_price.csv")
+data=load_data("car_price_13.csv")
 
 X=[float(r[0]) for r in data]
 Y=[float(r[2]) for r in data]
@@ -25,5 +25,6 @@ print("Model: Price = ",round(m,2),"* EngineSize +",round(c,2))
 
 engine=1600
 price=m*engine+c
+
 
 print("Predicted Car Price:",round(price))
