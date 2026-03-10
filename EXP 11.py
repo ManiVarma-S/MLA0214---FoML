@@ -10,7 +10,7 @@ def load_data(file):
 def distance(a,b):
     return math.sqrt((float(a[0])-float(b[0]))**2 + (float(a[1])-float(b[1]))**2)
 
-data=load_data("credit_data.csv")
+data=load_data("credit_data_11.csv")
 
 test=[42000,16000]
 k=3
@@ -28,4 +28,5 @@ neighbors=[label for _,label in distances[:k]]
 prediction=Counter(neighbors).most_common(1)[0][0]
 
 print("Test Data:",test)
+
 print("Predicted Credit Score:",prediction)
