@@ -100,7 +100,7 @@ def predict(network, row):
 # -----------------------------
 # Main
 # -----------------------------
-data = load_data("ann_data.csv")
+data = load_data("ann_data_4.csv")
 training_data = data[1:]
 
 network = initialize_network()
@@ -113,3 +113,4 @@ for row in training_data:
     inputs = list(map(float, row[:-1]))
     prediction = predict(network, inputs)
     print(f"Input: {inputs} -> Predicted: {prediction}")
+
