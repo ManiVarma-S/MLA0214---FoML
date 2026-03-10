@@ -6,7 +6,7 @@ def load_data(file):
         data=list(csv.reader(f))
     return data[1:]
 
-data=load_data("poly_data.csv")
+data=load_data("poly_data_9.csv")
 
 X=np.array([float(r[0]) for r in data])
 Y=np.array([float(r[1]) for r in data])
@@ -22,3 +22,4 @@ print("y =",round(linear_coef[0],2),"x +",round(linear_coef[1],2))
 
 print("\nPolynomial Regression Equation:")
 print("y =",round(poly_coef[0],2),"x² +",round(poly_coef[1],2),"x +",round(poly_coef[2],2))
+
