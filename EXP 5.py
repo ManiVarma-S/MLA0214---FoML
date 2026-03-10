@@ -42,7 +42,7 @@ def knn(training_data, test_instance, k):
 # ----------------------------
 # Main
 # ----------------------------
-data = load_data("knn_data.csv")
+data = load_data("knn_data_5.csv")
 training_data = data[1:]
 
 # Test Sample (Height, Weight)
@@ -55,3 +55,4 @@ prediction = knn(training_data, test_sample, k)
 print("Test Sample:", test_sample)
 print("K =", k)
 print("Predicted Class:", prediction)
+
