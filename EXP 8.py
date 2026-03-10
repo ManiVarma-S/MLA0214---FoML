@@ -5,7 +5,7 @@ def load_data(file):
         data=list(csv.reader(f))
     return data[1:]
 
-data=load_data("linear_data.csv")
+data=load_data("linear_data_8.csv")
 
 X=[float(r[0]) for r in data]
 Y=[float(r[1]) for r in data]
@@ -27,4 +27,5 @@ print("Intercept:",round(c,3))
 x_test=8
 y_pred=m*x_test+c
 print("Prediction for x=8:",round(y_pred,3))
+
 
