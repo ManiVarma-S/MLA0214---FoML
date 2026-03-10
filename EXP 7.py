@@ -9,7 +9,7 @@ def load_data(file):
 def sigmoid(z):
     return 1/(1+math.exp(-z))
 
-data=load_data("logistic_data.csv")
+data=load_data("logistic_data_7.csv")
 
 X=[float(row[0]) for row in data]
 Y=[float(row[1]) for row in data]
@@ -33,3 +33,4 @@ print("Bias:",round(b,3))
 test=5
 pred=sigmoid(w*test+b)
 print("Prediction for study hours =",test,"->",round(pred))
+
