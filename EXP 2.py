@@ -52,7 +52,7 @@ def candidate_elimination(data):
     return S, G
 
 
-data = load_data(r"C:\Users\WELCOME\Downloads\enjoysport.csv")
+data = load_data(r"C:\Users\WELCOME\Downloads\enjoysport_2.csv")
 
 S, G = candidate_elimination(data)
 
@@ -63,3 +63,4 @@ if S:
     print("\nFinal General Hypothesis (G):")
     for g in G:
         print(g)
+
